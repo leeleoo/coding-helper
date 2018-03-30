@@ -1,0 +1,20 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+import { connect } from 'dva'
+import Page from 'components/Page'
+import { Button } from 'antd'
+
+
+class {{component_name}} extends React.PureComponent {
+	render(){
+		return (
+			<Page loading={loading.models.{{model_name}}>
+
+			</Page>
+		)
+	}
+}
+
+export default connect(
+({ {{model_name}}, loading }) => ({ {{model_name}}, loading }))(
+{{component_name}})
