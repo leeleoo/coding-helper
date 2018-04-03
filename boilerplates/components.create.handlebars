@@ -7,8 +7,9 @@ import { Button } from 'antd'
 
 class {{component_name}} extends React.PureComponent {
 	render(){
+		const {loading , {{model_name}} } = this.props
 		return (
-			<Page loading={loading.models.{{model_name}}>
+			<Page loading={ loading.models.{{model_name}} }>
 
 			</Page>
 		)

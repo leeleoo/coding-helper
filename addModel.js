@@ -2,12 +2,12 @@ const { existsSync }             = require('fs')
 const { join }                   = require('path')
 const { getTemplate, writeFile } = require('./utils')
 
-function create(payload) {
-//  assert(payload.namespace, 'api/models/create: payload should have namespace')
+function createModel(payload) {
+  assert(payload.namespace, 'api/models/create: payload should have namespace')
   const template = getTemplate('models.create')
-  console.log(template)
   const source   = template(payload)
-  const filePath = join(process.cwd(), 'test.js')
+  const filePath = join(process.cwd(), `src/models`,`${payload.namespace}.js`)
+  console.log('filePath',filePath)
 //  assert(!existsSync(filePath), 'api/models/create: file exists')
   writeFile(filePath, source)
   
@@ -21,4 +21,4 @@ function create(payload) {
 //  }
 }
 
-module.exports = create
+module.exports = createModel

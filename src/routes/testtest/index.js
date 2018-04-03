@@ -8,8 +8,7 @@ class testtest extends React.PureComponent {
   render() {
     const { loading } = this.props
     return (
-        <Page loading={loading.models.testtest>
-      
+        <Page loading={loading.models.testtest}>
         </Page>
           )
   }
