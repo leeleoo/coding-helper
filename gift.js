@@ -10,12 +10,15 @@ const { argv, alias } = require('yargs')
       demand  : false,
       alias   : 'r'
     })
-    .option('a', {
-      alias   : 'action',
-      demand  : true,
-      default : 'tom',
-      describe: 'your name',
-      type    : 'string'
+    .option('namespace', {
+      describe: 'model namespace',
+      demand  : false,
+      alias   : 'n'
+    })
+    .option('model_name', {
+      describe: 'model namespace',
+      demand  : false,
+      alias   : 'm'
     })
 //    .demand(['action']) // 是否必须
 //    .default({ a: 'tom', n: 'new_model' }) // 默认
@@ -43,6 +46,11 @@ switch ( action ) {
     addModel({ namespace, route_name })
     addRouter({ model_name })
     addComponent({ model_name, component_name: upperCase(model_name) })
+    break
   default :
     error('must be one of "model" "router" "component" "all"')
+    error('gift all --model_name ${model_name} --namespace ${namespace} --route_name ${route_name}')
+    error('or')
+    error('gift all -m ${model_name} -n ${namespace} -r ${route_name}')
+  
 }

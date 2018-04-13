@@ -35,7 +35,7 @@ function addRouter({ model_name }) {
   
   const processed = root.toSource({ quote: 'single' })
   writeFile('./src/Router.js', processed)
-  console.log('processed:', processed)
+//  console.log('processed:', processed)
 }
 
 //writeFile(path, processed)

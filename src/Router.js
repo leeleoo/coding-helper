@@ -58,6 +58,61 @@ const routes = [
     path: '/coding',
     models   : () => [import('./models/coding')],
     component: () => import('./routes/coding/')
+  },
+  {
+    path: '/test1',
+    models   : () => [import('./models/test1')],
+    component: () => import('./routes/test1/')
+  },
+  {
+    path: '/test1',
+    models   : () => [import('./models/test1')],
+    component: () => import('./routes/test1/')
+  },
+  {
+    path: '/test1',
+    models   : () => [import('./models/test1')],
+    component: () => import('./routes/test1/')
+  },
+  {
+    path: '/test1',
+    models   : () => [import('./models/test1')],
+    component: () => import('./routes/test1/')
+  },
+  {
+    path: '/test1',
+    models   : () => [import('./models/test1')],
+    component: () => import('./routes/test1/')
+  },
+  {
+    path: '/test1',
+    models   : () => [import('./models/test1')],
+    component: () => import('./routes/test1/')
+  },
+  {
+    path: '/test1',
+    models   : () => [import('./models/test1')],
+    component: () => import('./routes/test1/')
+  },
+  {
+    path: '/test1',
+    models   : () => [import('./models/test1')],
+    component: () => import('./routes/test1/')
+  },
+  {
+    path: '/test1',
+    models   : () => [import('./models/test1')],
+    component: () => import('./routes/test1/')
+  },
+  {
+    path: '/test1',
+    models   : () => [import('./models/test1')],
+    component: () => import('./routes/test1/')
+  },
+  {
+    path: '/test1',
+    models   : () => [import('./models/test1')],
+    component: () => import('./routes/test1/')
   }
 ]
 
