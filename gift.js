@@ -49,8 +49,8 @@ switch ( action ) {
     break
   default :
     error('must be one of "model" "router" "component" "all"')
-    error('gift all --model_name ${model_name} --namespace ${namespace} --route_name ${route_name}')
+    error(' gift all --model_name ${model_name} --namespace ${namespace} --route_name ${route_name}')
     error('or')
-    error('gift all -m ${model_name} -n ${namespace} -r ${route_name}')
+    error(' gift all -m ${model_name} -n ${namespace} -r ${route_name}')
   
 }

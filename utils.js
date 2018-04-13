@@ -5,7 +5,6 @@ const { readFileSync, existsSync }   = require('fs')
 const { outputFileSync, removeSync } = require('fs-extra')
 
 function getTemplate(name) {
-  console.log('process.cwd()', process.cwd())
   const filePath = join(__dirname, `./boilerplates/${name}.handlebars`)
   
   assert(existsSync(filePath), `getTemplate: file ${name} not fould`)
