@@ -10,7 +10,7 @@ function createModel(payload) {
   console.log(payload.namespace)
   const filePath = join(process.cwd(), `src/models/${payload.namespace}.js`)
   console.log('new path')
-  console.log('filePath', filePath)
+//  console.log('filePath', filePath)
 //  assert(!existsSync(filePath), 'api/models/create: file exists')
   writeFile(filePath, source)
   
