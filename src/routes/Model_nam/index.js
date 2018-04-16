@@ -5,11 +5,11 @@ import Page from 'components/Page'
 import { Button } from 'antd'
 
 
-class  extends React.PureComponent {
+class Model_nam extends React.PureComponent {
 	render(){
-		const {loading ,  } = this.props
+		const {loading , model_nam } = this.props
 		return (
-			<Page loading={ loading.models. }>
+			<Page loading={ loading.models.model_nam }>
 
 			</Page>
 		)
@@ -17,5 +17,5 @@ class  extends React.PureComponent {
 }
 
 export default connect(
-({ , loading }) => ({ , loading }))(
-)
+({ model_nam, loading }) => ({ model_nam, loading }))(
+Model_nam)

@@ -26,7 +26,8 @@ function removeFile(filePath) {
 }
 
 function upperCase(str) {
-  return str[0].toLocaleUpperCase() + str.substr(1)
+  let _str = str
+  return _str[0].toLocaleUpperCase() + _str.substr(1)
 }
 
 module.exports = {

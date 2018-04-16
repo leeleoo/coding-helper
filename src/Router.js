@@ -123,6 +123,26 @@ const routes = [
     path: '/test1',
     models   : () => [import('./models/test1')],
     component: () => import('./routes/test1/')
+  },
+  {
+    path: '/true',
+    models   : () => [import('./models/true')],
+    component: () => import('./routes/true/')
+  },
+  {
+    path: '/model_nam',
+    models   : () => [import('./models/model_nam')],
+    component: () => import('./routes/model_nam/')
+  },
+  {
+    path: '/model_nam',
+    models   : () => [import('./models/model_nam')],
+    component: () => import('./routes/model_nam/')
+  },
+  {
+    path: '/model_nam',
+    models   : () => [import('./models/model_nam')],
+    component: () => import('./routes/Model_nam/')
   }
 ]
 

@@ -1,6 +1,6 @@
 const j                = require('jscodeshift')
 const { readFileSync } = require('fs')
-const { writeFile }    = require('./utils.js')
+const { writeFile ,upperCase}    = require('./utils.js')
 
 function addRouter({ model_name }) {
   const path = './src/Router.js'
@@ -26,7 +26,7 @@ function addRouter({ model_name }) {
           {
             path: '/${model_name}',
             models   : () => [import('./models/${model_name}')],
-            component: () => import('./routes/${model_name}/')
+            component: () => import('./routes/${upperCase(model_name)}/')
           }`)
                   .find(j.ObjectExpression).__paths[0].value
           )
